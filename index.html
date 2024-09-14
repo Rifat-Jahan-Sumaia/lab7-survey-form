@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Student Feedback Survey Form</h1>
+    <p id="description">We appreciate your time and effort in completing this survey. <br>Your feedback is vital to our commitment to continuous improvement.</p>
+    <form action="" method="post" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+            <label for="number" id="number-label">ID No: <input type="number" id="number" name="number" placeholder="Enter your ID" min="1" max="500" required></label>
+       </fieldset>
+       <fieldset>
+        <legend id="legend">Select your gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" class="gender">
+        <label for="male">Male</label>
+  <br>
+  <input type="radio" id="female" name="gender" value="female" class="gender">
+  <label for="female">Female</label>
+  <br>
+  <input type="radio" id="other" name="gender" value="other" class="gender">
+  <label for="other">Other</label>
+       </fieldset>
+       <fieldset>
+        <div>
+            <label id="selector">Select Your Favourite Course : </label> <select name="course" id="dropdown">
+                <option value="0">select one</option>
+                <option value="1">OOAD</option>
+                <option value="2">CAO</option>
+                <option value="3">OS</option>
+                <option value="4">CG</option>
+            </select></fieldset>
+        </fieldset>
+        <fieldset>
+            <label id="heading-text"> What did you like most about the course? </label>
+            <input type="checkbox" id="lectures" name="course-likes" value="lectures">
+                <label for="lectures">Lectures</label><br>
+
+                <input type="checkbox" id="assignments" name="course-likes" value="assignments">
+                <label for="assignments">Assignments</label><br>
+
+                <input type="checkbox" id="projects" name="course-likes" value="projects">
+                <label for="projects">Projects</label><br>
+
+                <input type="checkbox" id="exams" name="course-likes" value="exams">
+                <label for="exams">Exams</label><br>
+        </fieldset>
+        <label id="heading-text">What can be improved? : </label>
+        <textarea id="improvements" name="improvements" placeholder="Please provide your suggestions here..."></textarea>
+        <fieldset >
+            <button type="submit" id="submit">submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
